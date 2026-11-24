@@ -1,0 +1,4 @@
+# 链接微信：让DSH和微信双向互通。
+- insert:
+    - id: wechat-bridge
+      name: 'dsh-wechat-link'

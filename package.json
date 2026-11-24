@@ -1,0 +1,52 @@
+{
+  "name": "dsh-wechat-link",
+  "version": "1.0.0",
+  "description": "链接微信：让DSH和微信双向互通。",
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.2.2-rc.2"
+  },
+  "type": "module",
+  "main": "lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "bridge",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wechat",
+    "weixin",
+    "wechatauto",
+    "bridge"
+  ],
+  "author": "izhtes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izhtes/dsh-wechat-link.git"
+  },
+  "homepage": "https://github.com/izhtes/dsh-wechat-link#readme"
+}

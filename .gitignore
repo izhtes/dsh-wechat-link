@@ -1,0 +1,17 @@
+# 依赖与本地产物
+node_modules/
+tmp/
+.testhome/
+bridge/tmp_*
+bridge/fallback_state.json
+bridge/pending.json
+__pycache__/
+*.pyc
+*.log
+*.log.1
+
+# 本机配置 / 备份（永远不进仓库）
+bridge/bridge.log
+*.bak-*
+*.snap-*
+wechat-bridge-config.json
